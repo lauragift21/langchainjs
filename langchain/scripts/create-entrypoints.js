@@ -126,6 +126,7 @@ const entrypoints = {
   "document_loaders/web/notiondb": "document_loaders/web/notiondb",
   "document_loaders/web/notionapi": "document_loaders/web/notionapi",
   "document_loaders/web/pdf": "document_loaders/web/pdf",
+  "document_loaders/web/r2": "document_loaders/web/r2",
   "document_loaders/web/recursive_url": "document_loaders/web/recursive_url",
   "document_loaders/web/s3": "document_loaders/web/s3",
   "document_loaders/web/sonix_audio": "document_loaders/web/sonix_audio",

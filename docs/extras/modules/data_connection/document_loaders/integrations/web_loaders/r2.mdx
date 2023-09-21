@@ -1,0 +1,41 @@
+---
+hide_table_of_contents: true
+sidebar_class_name: node-only
+---
+
+# R2 File
+
+:::tip Compatibility
+Only available on Node.js.
+:::
+
+This covers how to load document objects from an R2 file object.
+
+## Setup
+
+To run this index you'll need to have Unstructured already set up and ready to use at an available URL endpoint. It can also be configured to run locally.
+
+See the docs [here](https://js.langchain.com/docs/modules/indexes/document_loaders/examples/file_loaders/unstructured) for information on how to do that.
+
+You'll also need to install the official AWS SDK:
+
+```bash npm2yarn
+npm install @aws-sdk/client-s3
+```
+
+## Usage
+
+Once Unstructured is configured, you can use the R2 loader to load files and then convert them into a Document.
+
+You can optionally provide a s3Config parameter to specify your bucket region, endpoint, access key, and secret access key. 
+
+You should generate an [API token](https://developers.cloudflare.com/r2/api/s3/tokens/) to serve as the Access Key ID and Access Key Secret for usage with S3-compactible SDKs. Once the token is created, pass the Secret Access Key and Access Key ID values in s3Config object.
+
+The S3 endpoint is available via the `https://<ACCOUNT_ID>.r2.cloudflarestorage.com` endpoint.
+
+You can access your `ACCOUNT_ID` [in the Cloudflare Dashboard](https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/).
+
+import CodeBlock from "@theme/CodeBlock";
+import Example from "@examples/document_loaders/r2.ts";
+
+<CodeBlock language="typescript">{Example}</CodeBlock>

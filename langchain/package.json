@@ -1653,6 +1653,11 @@
       "import": "./document_loaders/web/pdf.js",
       "require": "./document_loaders/web/pdf.cjs"
     },
+    "./document_loaders/web/r2": {
+      "types": "./document_loaders/web/r2.d.ts",
+      "import": "./document_loaders/web/r2.js",
+      "require": "./document_loaders/web/r2.cjs"
+    },
     "./document_loaders/web/recursive_url": {
       "types": "./document_loaders/web/recursive_url.d.ts",
       "import": "./document_loaders/web/recursive_url.js",
